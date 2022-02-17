@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Welcome to number guessing game</h1>
+    <div id="game_over">
+        <h3 class="game-status"></h3>
+        <p class="number_of_try"></p>
+        <p class="number_was"></p>
+        <button id="restart">Restart</button>
+    </div>
+    <div class="container">
+        <form id="form" action="">
+            <div class="attempt">
+                <p>You have <span id="attempt"></span> attempts</p>
+                <span>Guess a number from</span>
+                <select name="" id="select_level">
+                    <option value="1-20">1-20</option>
+                    <option value="1-50">1-50</option>
+                    <option value="1-100">1-100</option>
+                </select>
+            </div>
+            <input type="number" id="input" required>
+            <button type="submit">Hit!</button>
+            <p id="status"></p>
+        </form>
+        <audio id="lose-sound-effect">
+            <source src="assets/game-lose-sound-effect.mp3" >
+        </audio>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
